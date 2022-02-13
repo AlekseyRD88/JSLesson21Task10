@@ -1,8 +1,8 @@
 export function finishForm() {
-  const inputPassword = document.querySelector('input');
-  inputPassword.setAttribute('type', 'password');
+  const search = document.querySelector('form');
+  const search1 = document.querySelector('input');
   const newInput = document.createElement('input');
-  newInput.setAttribute('type', 'text', 'name', 'login');
-  const loginForm = document.querySelector('form');
-  loginForm.prepend(newInput);
+  newInput.setAttribute('type', 'text');
+  newInput.setAttribute('name', 'login');
+  search.insertBefore(newInput, search1);
 }
